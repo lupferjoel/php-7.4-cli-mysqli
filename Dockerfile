@@ -7,7 +7,7 @@ RUN apt-get update && \
     libpng-dev \
     libwebp-dev
 
-RUN docker-php-ext-configure gd --enable-gd --with-jpeg
+RUN docker-php-ext-configure gd --enable-gd --with-jpeg --with-webp
 
 RUN docker-php-ext-configure pdo_mysql --with-pdo-mysql=mysqlnd
 

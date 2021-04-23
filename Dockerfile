@@ -9,5 +9,3 @@ RUN apt-get update && \
 RUN docker-php-ext-configure gd --enable-gd --with-jpeg
 
 RUN docker-php-ext-install gd mysqli pdo pdo_mysql
-
-RUN docker-php-ext-install gd
